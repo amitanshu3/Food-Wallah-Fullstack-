@@ -6,7 +6,7 @@ import axios from "axios";
 const List = ({url}) => {
  
   const [list, setList] = useState([]);
-
+    console.log(url);
   const fetchList = async () => {
     const response = await axios.get(`${url}/api/food/list`);
     console.log(response.data.data);
