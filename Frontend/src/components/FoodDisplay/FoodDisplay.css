@@ -2,6 +2,24 @@
     margin-top: 30px;
 
 }
+.head{
+  display: flex;
+  justify-content:space-between;
+  
+}
+
+.search-food  {
+    width: 50%; /* Full width within the container */
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #bf2020;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    outline: none; 
+    margin-right: 0px;
+    
+}
 .food-display h2{
     font-size: max(2vw,24px);
     font-weight: 600;
@@ -12,4 +30,42 @@
     margin-top: 30px;
     gap: 30px;
     row-gap: 50px;
+}
+@media (max-width: 600px) {
+    .head {
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    
+    .search-food {
+        width: 100%; /* Full width */
+        margin-right: 0; /* Reset margin */
+        margin-top: 10px; /* Add some space below the heading */
+    }
+
+    .search-food input {
+        padding: 10px 40px 10px 10px;
+        font-size: 14px; /* Slightly smaller font size */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .search-food {
+        width: 70%; /* Adjust width for tablets */
+        margin-top: 10px; /* Add some space below the heading */
+        transform: translateX(0); /* Remove the transform for tablet */
+        margin-right: 0;
+    }
+
+    .search-food input {
+        padding: 10px 30px 10px 15px; /* Adjust padding for tablets */
+        font-size: 15px; /* Adjust font size for tablets */
+    }
 }
