@@ -43,7 +43,7 @@
 
 ### Clone the repository
 
-git clone https://github.com/amitanshu3/food-wallah.git
+git clone https://github.com/amitanshu3/Food-Wallah-Fullstack-.git
 
 ### Install Dependencies
 
@@ -53,6 +53,11 @@ cd Backend
 npm install
 
 
-###For Frontend
+#### For Frontend
 cd Frontend
 npm install
+
+#### For Admin
+cd Admin
+npm install
+
