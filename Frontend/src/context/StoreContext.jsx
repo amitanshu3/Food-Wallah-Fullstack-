@@ -3,7 +3,7 @@ import axios from "axios";
 export const StoreContext = createContext(null);
 const storeContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "https://food-wallah-backend.onrender.com";
+  const url = "https://foodwallahbackend-lgx2fw1l.b4a.run";
 
   const [token, setToken] = useState("");
   const [food_list, setFoodList] = useState([]);
