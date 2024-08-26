@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import './FoodDisplay.css';
 import { StoreContext } from '../../context/StoreContext';
 import FoodItem from '../FoodItem/FoodItem';
+import Shimmer from './Shimmer'
 
 const FoodDisplay = ({ category }) => {
   const { food_list } = useContext(StoreContext);
@@ -16,6 +17,11 @@ const FoodDisplay = ({ category }) => {
     const matchesSearch = item.name.toLowerCase().includes(filterList);
     return isInCategory && matchesSearch;
   });
+
+
+   if(filteredFoods.length==0){
+    return <Shimmer />
+  }
 
   return (
     <div className='food-display' id='food-display'>
