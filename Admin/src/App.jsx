@@ -9,7 +9,7 @@ import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
-  const url = "https://foodwallahbackend-lgx2fw1l.b4a.run";
+  const url = "https://food-wallah-backend.onrender.com";
   return (
     <div>
       <ToastContainer />
