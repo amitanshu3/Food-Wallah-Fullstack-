@@ -2,12 +2,12 @@ import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.stripe_secret_key);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 
 // Placing user order from frontend
 const placeOrder = async (req, res) => {
-    const frontend_url = 'http://localhost:5173';
+    const frontend_url = 'https://food-wallah.onrender.com';
 
     try {
         
